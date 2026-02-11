@@ -21,7 +21,8 @@ jobs:
     - name: Instalar Flutter (Necesario para Flet)
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.22.x' # Versión estable recomendada
+        channel: 'stable'  # <--- ESTO ES LO QUE CAMBIAMOS
+        # Borramos la línea que decía flutter-version: '3.22.x'
 
     - name: Instalar dependencias
       run: |
